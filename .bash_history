@@ -188,3 +188,28 @@ git status
 ls -l
 cp -r /home/tp2arq/UTN-FRA_SO_Examenes/202406 ./202406
 cp -r /home/tp2arq/RTA_Examen_20250621 ./RTA_Examen_20250621
+cp ~/.bash_history .
+ls -l
+git add .
+git status
+git commit -m "TP2 Federico Santamaria completo con docker y ansible"
+git push origin main
+git push
+cat ~/UTN-FRA_SO_2do_TP_-Santamaria-/RTA_Examen_20250621/Punto_C.sh
+cat ~/UTNFRA_SO_2do_TP_-Santamaria-/RTA_Examen_20250621/Punto_C.sh
+cd ~/UTNFRA_SO_2do_TP_-Santamaria- 
+ls
+ls RTA_Examen_20250621
+cat RTA_Examen_20250621/Punto_C.sh
+nano ~/UTNFRA_SO_2do_TP_-Santamaria-/RTA_Examen_20250621/Punto_C.sh
+chmod +x ~/UTNFRA_SO_2do_TP_-Santamaria-/RTA_Examen_20250621/Punto_C.sh
+cd ~/UTNFRA_SO_2do_TP_-Santamaria-
+git add RTA_Examen_20250621/Punto_C.sh
+git commit -m "Agregar contenido al script Punto_C.sh"
+git push origin main
+cd
+sudo adduser federicosantamaria
+cp ~/.bash_history ~/UTNFRA_SO_2do_TP_-Santamaria-/
+git add .bash_history
+git add .
+cd ~/UTNFRA_SO_2do_TP_-Santamaria-
