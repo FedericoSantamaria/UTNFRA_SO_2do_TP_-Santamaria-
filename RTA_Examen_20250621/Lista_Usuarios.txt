@@ -1,0 +1,2 @@
+usuario1,grupo1,/home/usuario1
+usuario2,grupo2,/home/usuario2

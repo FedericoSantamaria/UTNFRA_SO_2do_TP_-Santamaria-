@@ -1,0 +1,34 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-06-24 02:46:45,003 p=16655 u=tp2arq n=ansible INFO| - Role segundo_parcial was created successfully
+2025-06-24 03:22:50,347 p=17556 u=root n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-06-24 03:22:50,496 p=17556 u=root n=ansible INFO| PLAY [Ejecutar role segundo_parcial] *******************************************
+2025-06-24 03:22:50,503 p=17556 u=root n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-06-24 03:22:51,769 p=17556 u=root n=ansible INFO| ok: [localhost]
+2025-06-24 03:22:51,776 p=17556 u=root n=ansible INFO| TASK [segundo_parcial : Crear directorios para alumno y equipo] ****************
+2025-06-24 03:22:52,118 p=17556 u=root n=ansible INFO| changed: [localhost] => (item=alumno)
+2025-06-24 03:22:52,346 p=17556 u=root n=ansible INFO| changed: [localhost] => (item=equipo)
+2025-06-24 03:22:52,355 p=17556 u=root n=ansible INFO| TASK [segundo_parcial : Generar archivo datos_alumno.txt con template] *********
+2025-06-24 03:22:52,969 p=17556 u=root n=ansible INFO| changed: [localhost]
+2025-06-24 03:22:52,976 p=17556 u=root n=ansible INFO| TASK [segundo_parcial : Generar archivo datos_equipo.txt con template] *********
+2025-06-24 03:22:53,424 p=17556 u=root n=ansible INFO| changed: [localhost]
+2025-06-24 03:22:53,431 p=17556 u=root n=ansible INFO| TASK [segundo_parcial : Configurar sudoers para 2PSupervisores sin password] ***
+2025-06-24 03:22:53,866 p=17556 u=root n=ansible INFO| changed: [localhost]
+2025-06-24 03:22:53,873 p=17556 u=root n=ansible INFO| PLAY RECAP *********************************************************************
+2025-06-24 03:22:53,873 p=17556 u=root n=ansible INFO| localhost                  : ok=5    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

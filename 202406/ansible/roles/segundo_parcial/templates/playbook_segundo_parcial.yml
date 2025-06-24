@@ -1,0 +1,8 @@
+---
+- name: Ejecutar role segundo_parcial
+  hosts: localhost
+  become: yes
+  roles:
+    - segundo_parcial
+
+
